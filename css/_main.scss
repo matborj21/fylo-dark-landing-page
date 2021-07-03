@@ -1,0 +1,16 @@
+/* Body */
+
+body {
+    background-color: $dark-blue-main;
+}
+
+footer {
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: $cyan-in-gradient;
+    }
+    .attribution a {
+        color: $white-neutral;
+    }
+}
