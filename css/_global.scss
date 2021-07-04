@@ -1,7 +1,7 @@
 /* webpage colors */
 
 //Primary
-$dark-blue-into: hsl(217, 28%, 15%);
+$dark-blue-intro: hsl(217, 28%, 15%);
 $dark-blue-main: hsl(218, 28%, 13%);
 $dark-blue-footer: hsl(216, 53%, 9%);
 $dark-blue-testimonial: hsl(219, 30%, 18%);
@@ -12,11 +12,14 @@ $red-error: hsl(0, 100%, 63%);
 // Neutral
 $white-neutral: hsl(0, 0%, 100%);
 
-/*body*/
+/*fonts*/
 
 $headings-font-style: 'Raleway',
 sans-serif;
-$headings-font-size: 1.25rem;
 $body-font-style: 'Open Sans',
 sans-serif;
+
+/*fonts size*/
+
+$headings-font-size: 1.25rem;
 $body-font-size: 1.14rem;
