@@ -1,25 +1,30 @@
-/* webpage colors */
+html {
+    font-size: 100%;
+}
 
-//Primary
-$dark-blue-intro: hsl(217, 28%, 15%);
-$dark-blue-main: hsl(218, 28%, 13%);
-$dark-blue-footer: hsl(216, 53%, 9%);
-$dark-blue-testimonial: hsl(219, 30%, 18%);
-//Accent
-$cyan-in-gradient: hsl(176, 68%, 64%);
-$blue-in-gradient: hsl(198, 60%, 50%);
-$red-error: hsl(0, 100%, 63%);
-// Neutral
-$white-neutral: hsl(0, 0%, 100%);
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
-/*fonts*/
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-size: $bodySize;
+}
 
-$headings-font-style: 'Raleway',
-sans-serif;
-$body-font-style: 'Open Sans',
-sans-serif;
 
-/*fonts size*/
+/* Breakpoints */
 
-$headings-font-size: 1.25rem;
-$body-font-size: 1.14rem;
+$breakpoints: ( small: 499px, medium: 899px, large: 999px, xlarge: 1399px);
+@mixin breakpoint($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+    @media screen and (min-width: $breakpoint-value) {
+        @content;
+    }
+}

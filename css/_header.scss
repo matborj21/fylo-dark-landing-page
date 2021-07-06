@@ -1,0 +1,42 @@
+header {
+    height: 100px;
+    background-color: $introBg;
+    @include breakpoint(large) {
+        height: 200px;
+        max-height: 200px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+        // margin-top: 25px;
+        margin-bottom: 50px;
+        color: $whiteNeutral;
+        img {
+            width: 75px;
+            @include breakpoint(small) {
+                width: 120px;
+            }
+            @include breakpoint(large) {
+                width: 150px;
+            }
+            @include breakpoint(xlarge) {
+                width: 180px;
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            li {
+                justify-content: center;
+                list-style: none;
+                font-family: $titleFont;
+                font-size: 13px;
+                &:not(:last-child) {
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+}
