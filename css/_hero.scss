@@ -1,0 +1,38 @@
+.hero {
+    // width: 100%;
+    font-family: $titleFont;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    background-color: $introBg;
+    color: $whiteNeutral;
+    /* breakpoint for tablet*/
+    @include breakpoint(small) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        padding: 10px 5px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    p {
+        padding: 10px;
+        font-size: 15px;
+    }
+    button {
+        display: inline-block;
+        margin-bottom: 30px;
+        width: 80%;
+        background-color: $cyanGradient;
+        border: none;
+        border-radius: 50px;
+        color: $whiteNeutral;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
