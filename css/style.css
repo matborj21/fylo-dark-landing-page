@@ -155,41 +155,113 @@ header nav ul li:hover {
 }
 
 .hero {
-  font-family: "Raleway", sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   padding-right: 20px;
   padding-left: 20px;
-  text-align: center;
+  font-family: "Raleway", sans-serif;
   background-color: #1c2431;
   color: #ffffff;
+  /* background image*/
   /* breakpoint for tablet*/
 }
 
+.hero::after {
+  position: absolute;
+  content: '';
+  height: 150px;
+  width: 100%;
+  bottom: 0;
+  z-index: 0;
+  background: url(../images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 @media screen and (min-width: 499px) {
-  .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .hero::after {
+    height: 335px;
   }
 }
 
+@media screen and (min-width: 699px) {
+  .hero::after {
+    height: 370px;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .hero::after {
+    height: 570px;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .hero::after {
+    height: 715px;
+  }
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
 .hero img {
+  z-index: 1;
   padding: 10px 5px;
+}
+
+@media screen and (min-width: 499px) {
+  .hero img {
+    font-size: 40px;
+    padding: 10px 110px;
+  }
 }
 
 .hero h1 {
   font-size: 25px;
 }
 
+@media screen and (min-width: 499px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .hero h1 {
+    font-size: 40px;
+    max-width: 680px;
+  }
+}
+
 .hero p {
   padding: 10px;
-  font-size: 15px;
+}
+
+@media screen and (min-width: 499px) {
+  .hero p {
+    max-width: 550px;
+  }
+}
+
+@media screen and (min-width: 699px) {
+  .hero p {
+    font-size: 20px;
+    max-width: 600px;
+  }
 }
 
 .hero button {
@@ -204,5 +276,68 @@ header nav ul li:hover {
   padding-bottom: 15px;
   font-size: 1rem;
   font-weight: 700;
+}
+
+@media screen and (min-width: 499px) {
+  .hero button {
+    max-width: 285px;
+  }
+}
+
+.feature {
+  padding-top: 50px;
+  background-color: #181f2a;
+}
+
+.feature__grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  max-width: 888px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 699px) {
+  .feature__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.feature__items {
+  text-align: center;
+  color: #ffffff;
+  min-height: 150px;
+}
+
+.feature__items img {
+  margin: auto;
+}
+
+.feature__items h2 {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 699px) {
+  .feature__items h2 {
+    font-size: 1.35rem;
+  }
+}
+
+.feature__items p {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 699px) {
+  .feature__items p {
+    font-size: 1.15rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

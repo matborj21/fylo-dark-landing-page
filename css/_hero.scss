@@ -1,26 +1,72 @@
 .hero {
     // width: 100%;
-    font-family: $titleFont;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding-right: 20px;
     padding-left: 20px;
-    text-align: center;
+    font-family: $titleFont;
     background-color: $introBg;
     color: $whiteNeutral;
+    /* background image*/
+    &::after {
+        position: absolute;
+        content: '';
+        height: 150px;
+        width: 100%;
+        bottom: 0;
+        z-index: 0;
+        background: url(../images/bg-curvy-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        @include breakpoint-min(small) {
+            height: 335px;
+        }
+        @include breakpoint-min(medium) {
+            height: 370px;
+        }
+        @include breakpoint-min(large) {
+            height: 570px;
+        }
+        @include breakpoint-min(xlarge) {
+            height: 715px;
+        }
+    }
     /* breakpoint for tablet*/
-    @include breakpoint(small) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    &>* {
+        position: relative;
+        z-index: 1;
     }
     img {
+        z-index: 1;
         padding: 10px 5px;
+        @include breakpoint-min(small) {
+            font-size: 40px;
+            padding: 10px 110px;
+        }
     }
     h1 {
         font-size: 25px;
+        @include breakpoint-min(small) {
+            font-size: 35px;
+        }
+        @include breakpoint-min(large) {
+            font-size: 40px;
+            max-width: 680px;
+        }
     }
     p {
         padding: 10px;
-        font-size: 15px;
+        @include breakpoint-min(small) {
+            max-width: 550px;
+        }
+        @include breakpoint-min(medium) {
+            font-size: 20px;
+            max-width: 600px;
+        }
     }
     button {
         display: inline-block;
@@ -34,5 +80,8 @@
         padding-bottom: 15px;
         font-size: 1rem;
         font-weight: 700;
+        @include breakpoint-min(small) {
+            max-width: 285px;
+        }
     }
 }

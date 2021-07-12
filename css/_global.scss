@@ -30,10 +30,17 @@ img {
 
 /* Breakpoints */
 
-$breakpoints: ( small: 499px, medium: 899px, large: 999px, xlarge: 1399px);
-@mixin breakpoint($size) {
+$breakpoints: ( small: 499px, medium: 699px, large: 999px, xlarge: 1399px, max-small: 500px, max-medium: 900px, max-large: 1000px, max-xlarge: 1400px);
+@mixin breakpoint-min($size) {
     $breakpoint-value: map-get($breakpoints, $size);
     @media screen and (min-width: $breakpoint-value) {
+        @content;
+    }
+}
+
+@mixin breakpoint-max($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+    @media screen and (max-width: $breakpoint-value) {
         @content;
     }
 }

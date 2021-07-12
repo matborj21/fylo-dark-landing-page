@@ -1,0 +1,36 @@
+.feature {
+    padding-top: 50px;
+    background-color: $mainBg;
+    &__grid {
+        display: grid;
+        gap: 20px;
+        max-width: 888px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint-min(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    &__items {
+        text-align: center;
+        color: $whiteNeutral;
+        min-height: 150px;
+        img {
+            margin: auto;
+        }
+        h2 {
+            font-size: 1.2rem;
+            @include breakpoint-min(medium) {
+                font-size: 1.35rem;
+            }
+        }
+        p {
+            padding: 10px 20px;
+            font-size: 1rem;
+            @include breakpoint-min(medium) {
+                font-size: 1.15rem;
+            }
+        }
+    }
+}

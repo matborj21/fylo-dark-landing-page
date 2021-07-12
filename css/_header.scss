@@ -2,7 +2,7 @@ header {
     //margin: -1px; // to remove the whitespace between the header and hero
     height: 100px;
     background-color: $introBg;
-    @include breakpoint(large) {
+    @include breakpoint-min(large) {
         height: 200px;
         max-height: 200px;
     }
@@ -12,24 +12,24 @@ header {
         align-items: center;
         padding: 20px 20px;
         color: $whiteNeutral;
-        @include breakpoint(small) {
+        @include breakpoint-min(small) {
             padding-right: 40px;
             padding-left: 40px;
         }
-        @include breakpoint(xlarge) {
+        @include breakpoint-min(xlarge) {
             padding-right: 60px;
             padding-left: 60px;
             padding-top: 50px;
         }
         img {
             width: 75px;
-            @include breakpoint(small) {
+            @include breakpoint-min(small) {
                 width: 120px;
             }
-            @include breakpoint(large) {
+            @include breakpoint-min(large) {
                 width: 130px;
             }
-            @include breakpoint(xlarge) {
+            @include breakpoint-min(xlarge) {
                 width: 180px;
             }
         }
@@ -48,16 +48,16 @@ header {
                 &:hover {
                     font-weight: 700;
                 }
-                @include breakpoint(small) {
+                @include breakpoint-min(small) {
                     font-size: $bodySize;
                 }
-                @include breakpoint(large) {
+                @include breakpoint-min(large) {
                     font-size: 1rem;
                     &:not(:last-child) {
                         margin-right: 50px;
                     }
                 }
-                @include breakpoint(xlarge) {
+                @include breakpoint-min(xlarge) {
                     font-size: 1.2rem;
                 }
             }
