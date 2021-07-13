@@ -1,0 +1,13 @@
+.testimonials {
+    color: $whiteNeutral;
+    background-color: $mainBg;
+    .grid-testimonials {
+        display: grid;
+        max-width: 1300px;
+        align-items: center;
+        justify-content: center;
+        .testimonial {
+            background-color: $testimonialBg;
+        }
+    }
+}
