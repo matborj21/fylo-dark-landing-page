@@ -2,12 +2,63 @@
     color: $whiteNeutral;
     background-color: $mainBg;
     .grid-testimonials {
+        position: relative;
         display: grid;
+        margin: 0 auto;
         max-width: 1300px;
         align-items: center;
         justify-content: center;
+        @include breakpoint-min(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include breakpoint-min(large) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &:first-child {
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 45px;
+                width: 25px;
+                height: 20px;
+                background: url(../images/bg-quotes.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
         .testimonial {
+            margin: 20px 40px;
+            line-height: 1.8;
             background-color: $testimonialBg;
+            .text {
+                padding: 20px;
+                font-size: 12px;
+            }
+            .profile {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                margin-right: auto;
+                &-image {
+                    width: 30px;
+                    margin-right: 10px;
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+                &-text {
+                    margin-top: -12px;
+                    h4 {
+                        font-size: 13px;
+                        margin-bottom: -10px;
+                    }
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
         }
     }
 }
