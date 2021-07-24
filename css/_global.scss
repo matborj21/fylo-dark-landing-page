@@ -1,11 +1,12 @@
 html {
     font-size: 100%;
+    box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
     line-height: 1.5;
     font-family: $bodyFont;
     font-size: $bodySize;
+    // background-color: $mainBg;
 }
 
 

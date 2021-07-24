@@ -1,6 +1,8 @@
 .testimonials {
     color: $whiteNeutral;
     background-color: $mainBg;
+    // margin-bottom: 340px;
+    height: 100%;
     .grid-testimonials {
         position: relative;
         display: grid;
@@ -8,6 +10,7 @@
         max-width: 1300px;
         align-items: center;
         justify-content: center;
+        padding-bottom: 340px;
         @include breakpoint-min(medium) {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -25,15 +28,28 @@
                 background: url(../images/bg-quotes.png);
                 background-repeat: no-repeat;
                 background-size: cover;
+                @include breakpoint-min(small) {
+                    left: 25px
+                }
             }
         }
         .testimonial {
             margin: 20px 40px;
             line-height: 1.8;
             background-color: $testimonialBg;
+            @include breakpoint-min(small) {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
             .text {
                 padding: 20px;
                 font-size: 12px;
+                @include breakpoint-min(small) {
+                    font-size: 14px;
+                }
+                @include breakpoint-min(large) {
+                    font-size: 16px;
+                }
             }
             .profile {
                 display: flex;
@@ -47,12 +63,19 @@
                     img {
                         border-radius: 50%;
                     }
+                    @include breakpoint-min(large) {
+                        width: 40px;
+                        margin-right: 15px;
+                    }
                 }
                 &-text {
                     margin-top: -12px;
                     h4 {
                         font-size: 13px;
                         margin-bottom: -10px;
+                    }
+                    @include breakpoint-min(large) {
+                        font-size: 18px;
                     }
                     span {
                         font-size: 12px;
