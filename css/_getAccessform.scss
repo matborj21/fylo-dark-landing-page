@@ -1,0 +1,96 @@
+    .get-started {
+        position: absolute;
+        margin: 0 20px;
+        padding-top: 50px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 30px;
+        top: 0%;
+        left: 50%;
+        // width: 350px;
+        min-width: 340px;
+        max-width: 865px;
+        color: $whiteNeutral;
+        font-family: $bodyFont;
+        text-align: center;
+        background-color: $introBg;
+        border-radius: 10px;
+        box-shadow: 13px 6px 19px -6px rgba(0, 0, 0, 0.52);
+        transform: translate(-50%, -50%);
+        h1 {
+            font-size: 18px;
+            text-transform: capitalize;
+            @include breakpoint-min(medium) {
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+        p {
+            font-size: 14px;
+            text-align: justify;
+            @include breakpoint-min(medium) {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+        .forms {
+            margin: 30px auto;
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            input {
+                width: 100%;
+                padding: 13px 30px;
+                border-radius: 20px;
+                border: none;
+                color: darken($whiteNeutral, 50%);
+                margin-bottom: 20px;
+                @include breakpoint-min(medium) {
+                    display: inline-block;
+                    width: 70%;
+                    margin-right: 20px;
+                }
+            }
+            button {
+                width: 100%;
+                padding: 13px 30px;
+                border-radius: 20px;
+                border: none;
+                height: 43px;
+                color: $whiteNeutral;
+                font-size: 1rem;
+                font-weight: 700;
+                background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+                cursor: pointer;
+                &:hover {
+                    background: $cyanGradient;
+                }
+                @include breakpoint-min(medium) {
+                    display: inline-block;
+                    width: 30%;
+                    font-size: 14px;
+                    padding: 5px 10px;
+                }
+            }
+            @include breakpoint-min(medium) {
+                flex-direction: row;
+            }
+        }
+        @include breakpoint-max(small) {
+            width: 300px;
+            transform: translate(-56%, -50%);
+        }
+        @include breakpoint-min(small) {
+            width: 90%;
+            transform: translate(-54%, -50%);
+        }
+        @include breakpoint-min(medium) {
+            transform: translate(-53%, -50%);
+        }
+        @include breakpoint-min(large) {
+            transform: translate(-50%, -50%);
+        }
+        @include breakpoint-min(xlarge) {
+            transform: translate(-50%, -50%);
+        }
+    }

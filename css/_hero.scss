@@ -73,7 +73,7 @@
         display: inline-block;
         margin-bottom: 30px;
         width: 80%;
-        background-color: $cyanGradient;
+        background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
         border: none;
         border-radius: 50px;
         color: $whiteNeutral;
@@ -81,8 +81,12 @@
         padding-bottom: 15px;
         font-size: 1rem;
         font-weight: 700;
+        cursor: pointer;
         @include breakpoint-min(small) {
             max-width: 285px;
+        }
+        &:hover {
+            background: $cyanGradient;
         }
     }
 }
