@@ -36,6 +36,7 @@
         .forms {
             margin: 30px auto;
             display: flex;
+            // flex-wrap: wrap;
             align-self: center;
             flex-direction: column;
             input {
@@ -73,9 +74,26 @@
                 }
             }
             @include breakpoint-min(medium) {
+                // flex-wrap: wrap;
                 flex-direction: row;
             }
         }
+        .error {
+            display: none;
+            position: absolute;
+            top: 87%;
+            left: 50%;
+            font-size: 12px;
+            color: #ff4242;
+            width: 100%;
+            transform: translate(-50%);
+            @include breakpoint-min(medium) {
+                top: 76%;
+                text-align: left;
+                transform: translate(-42%, 50%);
+            }
+        }
+        // * start of media quiries for parent div.
         @include breakpoint-max(small) {
             width: 300px;
             transform: translate(-56%, -50%);

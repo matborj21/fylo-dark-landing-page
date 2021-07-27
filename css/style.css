@@ -697,6 +697,27 @@ header nav ul li:hover {
   }
 }
 
+.get-started .error {
+  display: none;
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  font-size: 12px;
+  color: #ff4242;
+  width: 100%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+@media screen and (min-width: 699px) {
+  .get-started .error {
+    top: 76%;
+    text-align: left;
+    -webkit-transform: translate(-42%, 50%);
+            transform: translate(-42%, 50%);
+  }
+}
+
 @media screen and (max-width: 499px) {
   .get-started {
     width: 300px;
