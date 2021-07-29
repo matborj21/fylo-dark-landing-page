@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/matborj21/fylo-dark-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://fylolandingpage-by-omat.netlify.app/)
 
 ## My process
   - mobile first approach
@@ -56,7 +56,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- Website - [Omat Borje](https://www.your-site.com)
+- Website[under construction] - [Omat Borje]
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/matborj21)
 - Twitter - [@zyborj](https://www.twitter.com/zyborj)
 
