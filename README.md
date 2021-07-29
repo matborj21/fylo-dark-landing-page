@@ -13,7 +13,7 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github](https://github.com/matborj21/fylo-dark-landing-page)
-- Live Site URL: [Add live site URL here](https://fylolandingpage-by-omat.netlify.app/)
+- Solution URL: [https://github.com/matborj21/fylo-dark-landing-page](https://github.com/matborj21/fylo-dark-landing-page)
+- Live Site URL: [https://fylolandingpage-by-omat.netlify.app/](https://fylolandingpage-by-omat.netlify.app/)
 
 ## My process
   - mobile first approach
@@ -42,7 +42,7 @@ Users should be able to:
 - No JS library created with Vanilla JS
 - added AOS.js for srcoll animation
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+
 
 ### What I learned
 
@@ -52,12 +52,12 @@ Users should be able to:
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+
 
 ## Author
 
 - Website[under construction] - [Omat Borje]
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/matborj21)
+- Frontend Mentor - [@matborj21](https://www.frontendmentor.io/profile/matborj21)
 - Twitter - [@zyborj](https://www.twitter.com/zyborj)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
