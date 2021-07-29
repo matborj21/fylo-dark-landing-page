@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
     <!-- Custom style css -->
     <link rel="stylesheet" href="css/style.css">
+
     <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 </head>
 
@@ -22,42 +24,40 @@
             <a href="#"><img src="/images/logo.svg" alt="logo"></a>
             <ul>
                 <li>
-                    <a href="#"></a>Features</li>
+                    <a href="#feature">Features</a></li>
                 <li>
-                    <a href="#"></a>Team</li>
+                    <a href="#team">Team</a></li>
                 <li>
-                    <a href="#"></a>Sign In</li>
+                    <a href="#sign-in">Sign In</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="hero">
-
             <img src="/images/illustration-intro.png" alt="illustration intro" />
             <h1>All your files in one secure location, accessible anywhere.</h1>
             <p>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
             <button>Get Started</button>
-
         </div>
-        <section class="feature">
+        <section class="feature" id="feature">
             <div class="feature__grid">
-                <div class="feature__items">
+                <div class="feature__items" data-aos="fade-left">
                     <img src="./images/icon-access-anywhere.svg" alt="computer icon">
                     <h2>Access your files, anywhere</h2>
                     <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
                 </div>
-                <div class="feature__items">
+                <div class="feature__items" data-aos="fade-right">
                     <img src="./images/icon-security.svg" alt="security icon">
                     <h2>Security you can trust</h2>
                     <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
                 </div>
-                <div class="feature__items">
+                <div class="feature__items" data-aos="fade-left">
                     <img src="./images/icon-collaboration.svg" alt="collaboration icon">
                     <h2>Real-time collaboration</h2>
                     <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
                 </div>
-                <div class="feature__items">
+                <div class="feature__items" data-aos="fade-right">
                     <img src="./images/icon-any-file.svg" alt="">
                     <h2>Store any type of file</h2>
                     <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
@@ -67,10 +67,10 @@
 
         </section>
 
-        <section class="productive">
+        <section class="productive" data-aos="slide-up">
             <div class="grid">
-                <div class="grid-left"><img src="./images/illustration-stay-productive.png" alt=""></div>
-                <div class="grid-right">
+                <div class="grid-left" data-aos="fade-right"><img src="./images/illustration-stay-productive.png" alt=""></div>
+                <div class="grid-right" data-aos="fade-left">
                     <h3>Stay productive, wherever you are</h3>
                     <p>
                         Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
@@ -84,9 +84,9 @@
         <!-- End of productive section-->
 
 
-        <section class="testimonials">
+        <section class="testimonials" id="team">
             <div class="grid-testimonials">
-                <div class="testimonial">
+                <div class="testimonial" data-aos="zoom-in-down">
                     <div class="text">
                         Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
                     </div>
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="zoom-in-down">
                     <div class="text">
                         Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
                     </div>
@@ -118,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="zoom-in-down">
                     <div class="text">
                         Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
                     </div>
@@ -141,14 +141,13 @@
     </main>
     <footer>
         <!-- get started form -->
-        <section class="get-started">
+        <section class="get-started" id="sign-in">
             <h1>get your early access today</h1>
             <p> It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
             <div class="forms">
                 <input type="email" name="email" id="email" placeholder="example@gmail.com"><span class="error">Error! Please enter a valid email address.</span>
                 <button id="btn-email">Get Started For Free</button>
             </div>
-
         </section>
         <div class="grid-footer">
             <div class="logo-footer">
@@ -225,8 +224,13 @@
   
 -->
 
-
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="/js/app.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-quad',
+        });
+    </script>
 </body>
 
 </html>

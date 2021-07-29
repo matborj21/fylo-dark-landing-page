@@ -11,6 +11,7 @@ btnEmail.addEventListener('click', (e) => {
     let inputValue = inputEmail.value;
     e.preventDefault;
     if (!emailIsValid(inputValue)) {
+        error.innerHTML = "Error! Please enter a valid email address."
         error.style.display = "block";
     } else {
         error.style.display = "none";

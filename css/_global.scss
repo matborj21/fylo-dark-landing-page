@@ -1,6 +1,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -13,12 +14,16 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     font-family: $bodyFont;
     font-size: $bodySize;
     background-color: $mainBg;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 
